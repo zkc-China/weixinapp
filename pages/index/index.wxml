@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view>
+  <view id='todos'>
+    <view class='title'>
+      <view>todos</view>
+    </view>
+    <view class="app">
+      <view class="todoinput">
+        <checkbox value="" checked="true" />
+        <input placeholder="What needs to be done?" />
+      </view>
+      <view class="todolist">
+        <view class="listinfo">
+          <view wx:for="{{items}}" class=''>
+            <checkbox checked="{{item.checked}}" /> 
+            <label class='todoOver' wx:if="{{item.checked}}"> {{item.value}} </label>
+            <label wx:else> {{item.value}} </label>
+            <label class='delete'>x</label>
+            <input value="{{item.value}}" wx:if="{{false}}"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="listbutton">
+    
+  </view>
+  
+</view>
