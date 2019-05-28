@@ -1,0 +1,27 @@
+
+<cover-image src="{{image}}"></cover-image>
+<view class='title'>
+  <text>个人信息</text>
+</view>
+<view class='context'>
+  <view class="name">
+    <view class = "left">姓    名:</view>
+    <text class = "right">{{user.name}}</text>
+  </view>
+  <view>
+    <view class = "left">账  号:</view>
+    <text class = "right">{{user.account}}</text>
+  </view>
+  <view>
+    <view class = "left">手 机 号:</view>
+    <text class = "right">{{user.phone}}</text>
+  </view>
+  <view>
+    <view class = "left">出生日期:</view>
+    <text class = "right">{{user.birthday}}</text>
+  </view>
+  <view>
+    <view class = "left">职  龄:</view>
+    <text class = "right">{{user.history}}</text>
+  </view>
+</view>

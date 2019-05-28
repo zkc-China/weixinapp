@@ -1,17 +1,16 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/test/test",
-    
+    "pages/index/index",
     "pages/main/main",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "backgroundColor": "#fff",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "北京维盛网域",
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json",
@@ -26,10 +25,5 @@
       "pagePath": "pages/main/main",
       "text": "主要功能"
     }]
-  },
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "debug": true
+  }
 }

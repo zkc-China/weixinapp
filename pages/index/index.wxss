@@ -1,60 +1,17 @@
 /**index.wxss**/
 
+.info {
+  margin: 10%;
+  text-align: center;
+}
+
 .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 50px;
-  color: rgba(255, 0, 0, 0.1);
-  margin-top: 0px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid red;
+  padding: 10px;
 }
 
-.app .todoinput {
-  height: 20px;
-  line-height: 20px;
-  margin: auto 20px;
-}
-
-.todoinput checkbox {
-  float: left;
-}
-
-.app .todolist {
-  margin-top: 15px;
-}
-
-.todolist .listinfo {
-  margin: auto 20px;
-}
-
-.todolist .listinfo input {
-  width: 100px;
-  height: 20px;
-}
-
-.todoOver {
-  text-decoration: line-through;
-  opacity: 0.2;
-}
-.listinfo>view{
-  position: relative;
-  margin: 2px auto;
-}
-.listinfo .delete {
-  position: absolute;
-  background: rgba(0, 0, 0, 0);
-  border: 0px;
-  top: 0;
-  right: 10px;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  margin: auto 0;
-  font-size: 30px;
-  color: #cc9a9a;
-  outline: none;
-  display: none;
-}
-.listinfo:hover>view>.delete{
-  display: block;
+.mintitle {
+  text-align: left;
 }

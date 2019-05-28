@@ -1,0 +1,7 @@
+/* pages/main/main.wxss */
+.title{
+  align-items: center;
+  color: red;
+  align-content: center;
+  text-align: center;
+}
