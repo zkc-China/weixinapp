@@ -3,18 +3,42 @@
   <view class='info'>
     <view class='title'>import</view>
     <view class='mintitle'>
-      <text>double:</text>
-      <text> {{ eye.result }} </text>
+      <view>
+        <text>双眼屈光检查结果:</text>
+        <text> {{ eye.result }} </text>
+      </view>
+      <view class="small">
+        <view class='success'>
+          <text>正  常  值 ：</text>
+          <text>左:</text>
+          <text> {{eye.right}} </text>
+          <text>,右:</text>
+          <text> {{eye.right}} </text>
+        </view>
+        <view class='alone'>
+          <text>您的检测结果:</text>
+          <text>左:</text>
+          <text> {{eye.right}} </text>
+          <text>,右:</text>
+          <text> {{eye.right}} </text>
+        </view>
+      </view>
+      <view>
+        <text>
+        {{eye.answer}}
+      </text>
+        <text>
+        建议：
+      </text>
+      </view>
+      <view>
+        <rich-text>
+          {{eye.advice}}
+        </rich-text>
+      </view>
     </view>
-    <view class='main'>
-    <text>light：</text>
-    <text> {{eye.right}} </text>
-    </view>
-    <view class='main'>
-    <text>right：</text>
-    <text> {{eye.right}} </text>
-    </view>
+
   </view>
 
-  
+
 </view>

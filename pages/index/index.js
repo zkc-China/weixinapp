@@ -7,8 +7,10 @@ Page({
     eye: {
       right: "3.0D",
       light: "2.20D",
-      result: "123412",
-      reason: "aaaaa"
+      result: "集合不足",
+      reason: "aaaaa",
+      answer: "laowang",
+      advice: "由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回"
     }
   },
   //事件处理函数
