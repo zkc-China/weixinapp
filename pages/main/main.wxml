@@ -1,1 +1,53 @@
-<view class='title'>{{title}}</view>
+<view>
+<view class = "title" >
+  {{message}}
+</view>
+<view wx:for="{{data}}" class="list">
+  <view class = "time">
+    {{item.time}}
+    <text class = "across">>></text>
+  </view>
+  <view class = "list_info" wx:if = "{{item.dots}}">
+    <view>
+      <text class = "left">Worth4-dots:</text>{{item.dots}}dots
+    </view>
+    <view>
+      <text class = "left">远眼位:</text>{{item.near}}Bl
+    </view>
+    <view>
+      <text class = "left">近眼位:</text>{{item.far}}Bl
+    </view>
+    <view>
+      <text class = "left">AC/A:</text>{{item.ac}}
+    </view>
+    <view>
+      <text class = "left">BCC:</text>{{item.bcc}}
+    </view>
+    <view class= "more">
+      <text class = "left">负相对调节（NRA）:</text><text class="moretext">{{item.fu}}</text>
+    </view>
+    <view class= "more">
+      <text class = "left">正相对调节（PRA）:</text><text class="moretext">{{item.zheng}}</text>
+    </view>
+    <view class= "more">
+      <text class = "left">调节灵敏度：OD:</text><text class="moretext">{{item.od}}cpm fail({{item.ods}})</text>
+    </view>
+    <view>
+      <text class = "left">OS:</text>{{item.os}}cpm fail({{item.oss}})
+    </view>
+    <view>
+      <text class = "left">OU:</text>{{item.ou}}cpm fail({{item.ous}})
+    </view>
+    <view>
+      <text class = "left">调节幅度:</text>OD:{{item.tiao[0]}} OS:{{item.tiao[1]}} OU:{{item.tiao[2]}}
+    </view>
+    <view>
+      <text class = "left">集合近点:</text>{{item.ji}}cm
+    </view>
+    <view>
+      <text class = "left">结论:</text>{{item.result}}
+    </view>
+  </view>
+</view>
+
+</view>
