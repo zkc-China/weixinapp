@@ -1,15 +1,16 @@
 {
   "pages": [
+    
     "pages/main/main",
-    "pages/index/index",
     "pages/test/test",
+    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "backgroundColor": "#fff",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "北京维盛网域",
+    "navigationBarTitleText": "隔壁老王",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
@@ -17,13 +18,10 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/test/test",
-      "text": "个人信息"
-    }, {
-      "pagePath": "pages/index/index",
-      "text": "检查结果"
+      "text": "隔壁老王"
     }, {
       "pagePath": "pages/main/main",
-      "text": "主要功能"
+      "text": "个人中心"
     }]
   },
   "networkTimeout": {

@@ -1,52 +1,22 @@
-/* pages/test/test.wxss */
-cover-image {
-  width: 20%;
-  border-radius: 50%;
-  margin-left: 40%;
-  padding-left: -60%;
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #F7F7F7;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: rgba(0,0,0,.8);
 }
-
-.title {
-  align-items: center;
-  text-align: center;
-  margin-top: 30rpx;
+.swiper {
+  height: 400rpx;
+  width: 100%;
 }
-
-.context {
-  margin-top: 20rpx;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  /* background: red; */
-  width: 80%;
-  margin-left: 10%;
-  border: 1rpx solid blueviolet;
-  border-bottom: 1rpx;
+.swiper image {
+  height: 100%;
+  width: 100%;
 }
-
-.context>view {
-  width: 600rpx;
-  height: 100rpx;
-  line-height: 100rpx;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  float: left;
-  /* color: greenyellow; */
-  /* background-color: green; */
-  border-bottom: 1rpx solid blueviolet;
-
-}
-
-.context view .left {
-  float: left;
-  text-align: center;
-  width: 200rpx;
-  height: 90rpx;
-  /* border-right: 1rpx solid blueviolet; */
-  /* background-color: yellow; */
-}
-
-.name {
-  /* background: greenyellow; */
+button{
+  margin: 10px;
+  height: 50px;
+  line-height: 50px;
 }

@@ -1,21 +1,17 @@
 // pages/test/test.js
-
-const person = {
-  name: "zkc",
-  account: "amold",
-  phone: "12345678901",
-  birthday: "1993年03月23日",
-  history: "三年"
-}
-
+var base64 = require("../images/base64");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    user: person,
-    image: "../image/123.jpg",
+    movies: [
+      { url: '../../images/eye.jpg' },
+      { url: '../../images/eye1.jpg' },
+      { url: '../../images/eye.jpg' },
+      { url: '../../images/eye1.jpg' }
+    ]
   },
   /**
    * 生命周期函数--监听页面加载
@@ -25,6 +21,10 @@ Page({
       allowDefault: true
     });
     console.log(app.globalData);
+    this.setData({
+      icon20: base64.icon20,
+      icon60: base64.icon60
+    });
 
   },
 

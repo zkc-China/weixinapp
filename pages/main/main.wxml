@@ -1,53 +1,94 @@
-<view>
-<view class = "title" >
-  {{message}}
-</view>
-<view wx:for="{{data}}" class="list">
-  <view class = "time">
-    {{item.time}}
-    <text class = "across">>></text>
-  </view>
-  <view class = "list_info" wx:if = "{{item.dots}}">
-    <view>
-      <text class = "left">Worth4-dots:</text>{{item.dots}}dots
-    </view>
-    <view>
-      <text class = "left">远眼位:</text>{{item.near}}Bl
-    </view>
-    <view>
-      <text class = "left">近眼位:</text>{{item.far}}Bl
-    </view>
-    <view>
-      <text class = "left">AC/A:</text>{{item.ac}}
-    </view>
-    <view>
-      <text class = "left">BCC:</text>{{item.bcc}}
-    </view>
-    <view class= "more">
-      <text class = "left">负相对调节（NRA）:</text><text class="moretext">{{item.fu}}</text>
-    </view>
-    <view class= "more">
-      <text class = "left">正相对调节（PRA）:</text><text class="moretext">{{item.zheng}}</text>
-    </view>
-    <view class= "more">
-      <text class = "left">调节灵敏度：OD:</text><text class="moretext">{{item.od}}cpm fail({{item.ods}})</text>
-    </view>
-    <view>
-      <text class = "left">OS:</text>{{item.os}}cpm fail({{item.oss}})
-    </view>
-    <view>
-      <text class = "left">OU:</text>{{item.ou}}cpm fail({{item.ous}})
-    </view>
-    <view>
-      <text class = "left">调节幅度:</text>OD:{{item.tiao[0]}} OS:{{item.tiao[1]}} OU:{{item.tiao[2]}}
-    </view>
-    <view>
-      <text class = "left">集合近点:</text>{{item.ji}}cm
-    </view>
-    <view>
-      <text class = "left">结论:</text>{{item.result}}
+<view class="page">
+  <view class="page__hd">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_example ">
+        <view class="weui-cell__hd">
+          <image src="{{icon60}}" style="margin-left:20px;margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">隔壁老王</view>
+      </view>
     </view>
   </view>
-</view>
-
+  <view class="weui-cells__title">个人检查历史</view>
+  <view class="weui-panel">
+    <view class="weui-panel__hd">训练记录</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_small-appmsg">
+        <view class="weui-cells weui-cells_in-small-appmsg">
+          <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>2019.10.11</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="gotoView">详细信息</view>
+          </navigator>
+          <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>2019.9.11</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="gotoView">详细信息</view>
+          </navigator>
+          <view class="weui-panel__ft">
+            <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-panel">
+    <view class="weui-panel__hd">屈光检查</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_small-appmsg">
+        <view class="weui-cells weui-cells_in-small-appmsg">
+          <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>2019.10.11</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="gotoView">详细信息</view>
+          </navigator>
+          <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>2019.9.11</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="gotoView">详细信息</view>
+          </navigator>
+          <view class="weui-panel__ft">
+            <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-panel">
+    <view class="weui-panel__hd">视功能检查</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_small-appmsg">
+        <view class="weui-cells weui-cells_in-small-appmsg">
+          <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>2019.10.11</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="gotoView">详细信息</view>
+          </navigator>
+          <navigator url="" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>2019.9.11</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="gotoView">详细信息</view>
+          </navigator>
+          <view class="weui-panel__ft">
+            <view class="weui-cell weui-cell_access weui-cell_link">
+              <view class="weui-cell__bd">查看更多</view>
+              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

@@ -1,17 +1,24 @@
-/**index.wxss**/
-
-.info {
-  margin: 10%;
-  text-align: center;
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #F7F7F7;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: rgba(0,0,0,.8);
 }
-
-.title {
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid red;
-  padding: 10px;
+.placeholder1{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: left;
+    background-color: #F7F7F7;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: rgba(0,0,0,.8);
 }
-
-.mintitle {
-  text-align: left;
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
 }

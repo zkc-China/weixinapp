@@ -1,44 +1,71 @@
-<!--index.wxml-->
-<view>
-  <view class='info'>
-    <view class='title'>import</view>
-    <view class='mintitle'>
-      <view>
-        <text>双眼屈光检查结果:</text>
-        <text> {{ eye.result }} </text>
-      </view>
-      <view class="small">
-        <view class='success'>
-          <text>正  常  值 ：</text>
-          <text>左:</text>
-          <text> {{eye.right}} </text>
-          <text>,右:</text>
-          <text> {{eye.right}} </text>
-        </view>
-        <view class='alone'>
-          <text>您的检测结果:</text>
-          <text>左:</text>
-          <text> {{eye.right}} </text>
-          <text>,右:</text>
-          <text> {{eye.right}} </text>
-        </view>
-      </view>
-      <view>
-        <text>
-        {{eye.answer}}
-      </text>
-        <text>
-        建议：
-      </text>
-      </view>
-      <view>
-        <rich-text>
-          {{eye.advice}}
-        </rich-text>
+<view class="page">
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <view class="placeholder">双眼屈光检查结果:{{ eye.result }}</view>
       </view>
     </view>
-
+    <view class="weui-flex">
+      <view>
+        <view class="placeholder">正常值:</view>
+      </view>
+      <view class="weui-flex__item">
+          <view class="weui-flex">
+            <view class="weui-flex__item">
+              <view class="placeholder">左：</view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder1">{{eye.right}}</view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder">右：</view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder1"> {{eye.right}}</view>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-flex">
+      <view>
+        <view class="placeholder">您的值:</view>
+      </view>
+      <view class="weui-flex__item">
+          <view class="weui-flex">
+            <view class="weui-flex__item">
+              <view class="placeholder">左：</view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder1">{{eye.right}}</view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder">右：</view>
+            </view>
+            <view class="weui-flex__item">
+              <view class="placeholder1"> {{eye.right}}</view>
+            </view>
+        </view>
+      </view>
+    </view>
   </view>
-
-
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">检查师：{{eye.answer}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h2">建议：</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
